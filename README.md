@@ -33,13 +33,6 @@ gulp
 
 ### head(name)
 
-Назначение: вывод строки с заголовком h2
-
-Аргументы: 
-
-* Заголовок (Тип: строка)
-
-
 Вызов:
 ```jade
 +head('Заголовок')
@@ -52,6 +45,25 @@ gulp
   </td>
 </tr>
 ```
+
+### color(labels, id, value)
+
+Вызов:
+```jade
++color('Label name', 'main_color', '#fff')
+```
+Результат:
+```html
+<tr>
+  <td>
+    <label for="main_color">Label name</label>
+  </td>
+  <td>
+    <input name="main_color" id="main_color" value="#fff" class="color"/>
+  </td>
+</tr>
+```
+
 
 
 ## Ссылки
