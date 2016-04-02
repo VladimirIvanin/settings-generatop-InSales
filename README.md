@@ -31,6 +31,23 @@ gulp
 * image(labels, id, name, width, height)
 * select(labels, id, value)
 
+### head(name)
+
+Заголовок принимает строку.
+
+Вызов:
+```jade
++head('Заголовок')
+```
+Результат:
+```html
+<tr>
+  <td colspan="2">
+    <h2>Заголовок</h2>
+  </td>
+</tr>
+```
+
 
 ## Ссылки
 
