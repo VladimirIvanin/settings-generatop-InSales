@@ -1,0 +1,96 @@
+mixin head(name)
+  tr
+    td(colspan="2")
+      h2= name
+
+mixin color(labels, id, value)
+  tr
+    td
+      label(
+      for= id
+      )= labels
+    td
+      input(
+      name= id
+      id= id
+      value= value
+      class="color"
+      )
+
+mixin checkbox(labels, id)
+  tr
+    td
+      label(
+      for= id
+      )= labels
+    td
+      input(
+      name= id
+      id= id
+      type="checkbox"
+      )
+
+mixin txt(labels, id)
+  tr
+    td
+      label(
+      for= id
+      )= labels
+    td
+      input(
+      name= id
+      id= id
+      type="text"
+      )
+
+mixin file(labels, id, name)
+  if name
+    - var filename = name
+  else
+    - var filename = id
+  tr
+    td
+      label(
+      for= id
+      )= labels
+    td
+      input(
+      name= filename
+      id= id 
+      type="file"
+      )
+
+mixin image(labels, id, name, width, height)
+  if name
+    - var filename = name
+  else
+    - var filename = id
+  tr
+    td
+      label(
+      for= id
+      )= labels
+    td
+      input(
+      name= filename
+      id= id 
+      type="file"
+      data-max-width= width
+      data-max-height= height
+      )
+
+mixin select(labels, id, value)
+  tr
+    td
+      label(
+      for= id
+      )= labels
+    td
+      select(
+      name= id
+      id= id
+      )
+        - each val, key in value
+            option(
+            value= key
+            )= val

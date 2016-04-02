@@ -1,0 +1,60 @@
+include ./part/mixin.jade
+fieldset
+  legend Логотип
+  table
+    +image('Загрузить логотип', 'logo', 'logo.png', '500', '300')
+
+fieldset
+  legend Слайдер
+  table
+    // 1 слайд
+    +head('1 слайд')
+    +checkbox('Показывать 1 слайд?', 'load_slide_check_1')
+    +image('Загрузить 1 слайд', 'load_slide_image_1', 'load_slide_image_1.png', '2000', '1000')
+    +txt('Ссылка 1 слайда', 'load_slide_link_1')
+
+    // 2 слайд
+    +head('2 слайд')
+    +checkbox('Показывать 2 слайд?', 'load_slide_check_2')
+    +image('Загрузить 2 слайд', 'load_slide_image_2', 'load_slide_image_2.png', '2000', '1000')
+    +txt('Ссылка 2 слайда', 'load_slide_link_2')
+
+    // 3 слайд
+    +head('3 слайд')
+    +checkbox('Показывать 3 слайд?', 'load_slide_check_3')
+    +image('Загрузить 3 слайд', 'load_slide_image_3', 'load_slide_image_3.png', '2000', '1000')
+    +txt('Ссылка 3 слайда', 'load_slide_link_3')
+
+
+fieldset
+  legend Настройка цветов
+  table
+    // Основные цвета
+    +head('Цвет текста')
+    +color('Основной', 'base_color', '#000')
+    +color('Ссылки', 'link_color', '#ccc')
+
+    +head('Цвет фона')
+    +color('Контент', 'bg_content', '#000')
+    +color('Меню', 'bg_menu', '#222')
+
+fieldset
+  legend Настройки сайта
+  table
+    +head('Расположение сайдбара')
+    +select('Выбрать расположение сайдбара', 'sidebar_position', 
+      {
+        left: "Слева", 
+        right: "Справа"
+      })
+
+  table
+    +head('Расположение контактного телефона')
+    +select('Выбрать расположение телефона', 'phone_position', 
+      {
+        "left top": "Слева сверху", 
+        "right top": "Справа сверху",
+        "left bottom": "Слева снизу", 
+        "right bottom": "Справа снизу"
+      })
+

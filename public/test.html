@@ -1,0 +1,198 @@
+
+<fieldset>
+  <legend>Логотип</legend>
+  <table>
+    <tr>
+      <td>
+        <label for="logo">Загрузить логотип</label>
+      </td>
+      <td>
+        <input name="logo.png" id="logo" type="file" data-max-width="500" data-max-height="300"/>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+<fieldset>
+  <legend>Слайдер</legend>
+  <table>
+    <!-- 1 слайд-->
+    <tr>
+      <td colspan="2">
+        <h2>1 слайд</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="load_slide_check_1">Показывать 1 слайд?</label>
+      </td>
+      <td>
+        <input name="load_slide_check_1" id="load_slide_check_1" type="checkbox"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="load_slide_image_1">Загрузить 1 слайд</label>
+      </td>
+      <td>
+        <input name="load_slide_image_1.png" id="load_slide_image_1" type="file" data-max-width="2000" data-max-height="1000"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="load_slide_link_1">Ссылка 1 слайда</label>
+      </td>
+      <td>
+        <input name="load_slide_link_1" id="load_slide_link_1" type="text"/>
+      </td>
+    </tr>
+    <!-- 2 слайд-->
+    <tr>
+      <td colspan="2">
+        <h2>2 слайд</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="load_slide_check_2">Показывать 2 слайд?</label>
+      </td>
+      <td>
+        <input name="load_slide_check_2" id="load_slide_check_2" type="checkbox"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="load_slide_image_2">Загрузить 2 слайд</label>
+      </td>
+      <td>
+        <input name="load_slide_image_2.png" id="load_slide_image_2" type="file" data-max-width="2000" data-max-height="1000"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="load_slide_link_2">Ссылка 2 слайда</label>
+      </td>
+      <td>
+        <input name="load_slide_link_2" id="load_slide_link_2" type="text"/>
+      </td>
+    </tr>
+    <!-- 3 слайд-->
+    <tr>
+      <td colspan="2">
+        <h2>3 слайд</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="load_slide_check_3">Показывать 3 слайд?</label>
+      </td>
+      <td>
+        <input name="load_slide_check_3" id="load_slide_check_3" type="checkbox"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="load_slide_image_3">Загрузить 3 слайд</label>
+      </td>
+      <td>
+        <input name="load_slide_image_3.png" id="load_slide_image_3" type="file" data-max-width="2000" data-max-height="1000"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="load_slide_link_3">Ссылка 3 слайда</label>
+      </td>
+      <td>
+        <input name="load_slide_link_3" id="load_slide_link_3" type="text"/>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+<fieldset>
+  <legend>Настройка цветов</legend>
+  <table>
+    <!-- Основные цвета-->
+    <tr>
+      <td colspan="2">
+        <h2>Цвет текста</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="base_color">Основной</label>
+      </td>
+      <td>
+        <input name="base_color" id="base_color" value="#000" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="link_color">Ссылки</label>
+      </td>
+      <td>
+        <input name="link_color" id="link_color" value="#ccc" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <h2>Цвет фона</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="bg_content">Контент</label>
+      </td>
+      <td>
+        <input name="bg_content" id="bg_content" value="#000" class="color"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="bg_menu">Меню</label>
+      </td>
+      <td>
+        <input name="bg_menu" id="bg_menu" value="#222" class="color"/>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+<fieldset>
+  <legend>Настройки сайта</legend>
+  <table>
+    <tr>
+      <td colspan="2">
+        <h2>Расположение сайдбара</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="sidebar_position">Выбрать расположение сайдбара</label>
+      </td>
+      <td>
+        <select name="sidebar_position" id="sidebar_position">
+          <option value="left">Слева</option>
+          <option value="right">Справа</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <td colspan="2">
+        <h2>Расположение контактного телефона</h2>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="phone_position">Выбрать расположение телефона</label>
+      </td>
+      <td>
+        <select name="phone_position" id="phone_position">
+          <option value="left top">Слева сверху</option>
+          <option value="right top">Справа сверху</option>
+          <option value="left bottom">Слева снизу</option>
+          <option value="right bottom">Справа снизу</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</fieldset>

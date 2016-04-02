@@ -1,0 +1,12 @@
+{
+  "name": "Settings-generatop-InSales",
+  "version": "0.0.1",
+  "description": "Набор миксинов для создания settings.html",
+  "author": "Vladimir",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0"
+  }
+}
