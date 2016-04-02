@@ -21,6 +21,15 @@ NPM установит в папку с проектом нужные пакет
 gulp
 ```
 
+## Список миксинов
+
+* head(name)
+* color(labels, id, value)
+* checkbox(labels, id)
+* txt(labels, id)
+* file(labels, id, name)
+* image(labels, id, name, width, height)
+* select(labels, id, value)
 
 
 ## Ссылки
