@@ -1,5 +1,11 @@
 # Jade mixins для генерации настроек темы InSales
 
+## Установка
+
+Для работы нужен установленный Node.js.
+
+- [Дистрибутив Node.js](https://nodejs.org/en/download/)
+
 ## Ссылки
 
 ### Node.js
