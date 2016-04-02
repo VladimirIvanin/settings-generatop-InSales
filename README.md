@@ -153,7 +153,53 @@ gulp
 ```
 
 
+### select(label, id, value)
 
+Вызов:
+```jade
++select('Мой список', 'main_select',
+        {
+          one: "Один", 
+          two: "Два"
+        })
+```
+Результат:
+```html
+<tr>
+  <td>
+    <label for="main_select">Мой список</label>
+  </td>
+  <td>
+    <select name="main_select" id="main_select">
+      <option value="one">Один</option>
+      <option value="two">Два</option>
+    </select>
+  </td>
+</tr>
+```
+
+Вызов:
+```jade
++select('Мой список', 'main_select',
+        {
+          "one two": "Один - Два", 
+          "three four": "Три - четыре"
+        })
+```
+Результат:
+```html
+<tr>
+  <td>
+    <label for="main_select">Мой список</label>
+  </td>
+  <td>
+    <select name="main_select" id="main_select">
+      <option value="one two">Один - Два</option>
+      <option value="three four">Три - четыре</option>
+    </select>
+  </td>
+</tr>
+```
 
 ## Ссылки
 
