@@ -43,6 +43,20 @@ mixin txt(labels, id)
       type="text"
       )
 
+mixin area(labels, id)
+  tr
+    td
+      label(
+      for= id
+      )= labels
+    td
+      textarea(
+      name= id
+      id= id
+      type="text"
+      style="height: 92px"
+      )
+
 mixin file(labels, id, name)
   if name
     - var filename = name
