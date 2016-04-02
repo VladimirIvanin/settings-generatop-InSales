@@ -158,7 +158,7 @@ HTML
     <label for="main_textarea">label name</label>
   </td>
   <td>
-    <textarea name="main_textarea" id="main_textarea" type="text" style="height: 92px"></textarea>
+    <textarea name="main_textarea" id="main_textarea" style="height: 92px"></textarea>
   </td>
 </tr>
 ```
