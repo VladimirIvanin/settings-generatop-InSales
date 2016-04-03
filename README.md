@@ -70,6 +70,7 @@ HTML
 * head(name)
 * color(label, id, value)
 * checkbox(label, id)
+* radio(label, id, value, name)
 * txt(label, id)
 * area(label, id)
 * file(label, id, name)
@@ -123,6 +124,33 @@ HTML
   </td>
   <td>
     <input name="main_checkbox" id="main_checkbox" type="checkbox"/>
+  </td>
+</tr>
+```
+
+### radio(label, id, value, name)
+
+Вызов:
+```jade
++radio('Main label 1', 'main_label_1', '1', 'main_label')
++radio('Main label 2', 'main_label_2', '2', 'main_label')
+```
+Результат:
+```html
+<tr>
+  <td>
+    <label for="main_label_1"></label>
+  </td>
+  <td>
+    <input name="main_label" id="main_label_1" type="radio" value="1"/>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label for="main_label_2"></label>
+  </td>
+  <td>
+    <input name="main_label" id="main_label_2" type="radio" value="2"/>
   </td>
 </tr>
 ```
