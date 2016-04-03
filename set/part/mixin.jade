@@ -30,6 +30,20 @@ mixin checkbox(labels, id)
       type="checkbox"
       )
 
+mixin radio(label, id, value, name)
+  tr
+    td
+      label(
+      for= id
+      )= labels
+    td
+      input(
+      name= name
+      id= id
+      type="radio"
+      value= value
+      )
+
 mixin txt(labels, id)
   tr
     td
