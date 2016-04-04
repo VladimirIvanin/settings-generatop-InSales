@@ -30,7 +30,7 @@ gulp
 
 Если вы пользуетесь Sublime Text и не хотите вникать в Gulp.js 
 
-Можно устрановить [пакет компилятора](https://packagecontrol.io/packages/Jade%20Build) в свой редактор, но установка node.js обязательна, так же обязательно установить Jade через NPM глобально.
+Можно установить [пакет компилятора](https://packagecontrol.io/packages/Jade%20Build) в свой редактор, но установка node.js обязательна, так же обязательно установить Jade через NPM глобально.
 
 ```
 * Windows: `npm install jade --global`
