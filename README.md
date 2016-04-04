@@ -72,7 +72,6 @@ HTML
 * checkbox(label, id)
 * radio(label, id, value, name)
 * txt(label, id)
-* area(label, id)
 * file(label, id, name)
 * image(label, id, name, width, height)
 * select(label, id, value)
@@ -169,24 +168,6 @@ HTML
   </td>
   <td>
     <input name="main_txt" id="main_txt" type="text"/>
-  </td>
-</tr>
-```
-
-### area(label, id)
-
-Вызов:
-```jade
-+area('label name', 'main_textarea')
-```
-Результат:
-```html
-<tr>
-  <td>
-    <label for="main_textarea">label name</label>
-  </td>
-  <td>
-    <textarea name="main_textarea" id="main_textarea" style="height: 92px"></textarea>
   </td>
 </tr>
 ```
