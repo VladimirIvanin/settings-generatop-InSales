@@ -286,6 +286,7 @@ HTML
 
 ### Jade
 
+* [Установка Jade компилятора в Sublime Text](https://packagecontrol.io/packages/Jade%20Build)
 * [Сайт шаблонизатора](http://jade-lang.com/)
 * [О Jade на русском](http://jsman.ru/jade/)
 * [Небольшой code-style по Jade](https://github.com/CSSSR/sputnik/blob/master/Jade.md)
