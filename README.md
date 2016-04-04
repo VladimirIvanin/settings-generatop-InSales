@@ -27,6 +27,17 @@ NPM установит в папку с проектом нужные пакет
 ```
 gulp
 ```
+
+Если вы пользуетесь Sublime Text и не хотите вникать в Gulp.js 
+
+Можно устрановить [пакет компилятора](https://packagecontrol.io/packages/Jade%20Build) в свой редактор, но установка node.js обязательна, так же обязательно установить Jade через NPM глобально.
+
+```
+* Windows: `npm install jade --global`
+
+* OS X: `sudo npm install jade --global`
+```
+
 ## Работа с проектом
 
 Jade фалы для компиляции лежат в папке **./set/** и компилируются в папку **./public/**.
