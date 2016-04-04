@@ -288,3 +288,4 @@ HTML
 
 * [Сайт шаблонизатора](http://jade-lang.com/)
 * [О Jade на русском](http://jsman.ru/jade/)
+* [Небольшой code-style по Jade](https://github.com/CSSSR/sputnik/blob/master/Jade.md)
