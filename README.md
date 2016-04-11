@@ -294,6 +294,7 @@ HTML
 
 * [Сайт Gulp.js](http://gulpjs.com/)
 * [Базовый курс по Gulp](http://loftblog.ru/material/gulp-js-rabotaem-s-css-concat-minify-rename-notify-watch-dest/)
+* [Сринкаст по Gulp](https://learn.javascript.ru/screencast/gulp)
 
 ### Jade
 
