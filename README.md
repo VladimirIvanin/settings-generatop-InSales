@@ -85,7 +85,7 @@ HTML
 * txt(label, id)
 * file(label, id, name)
 * image(label, id, name, width, height)
-* select(label, id, value)
+* select(label, id, value, groups)
 
 ### head(name)
 
@@ -257,19 +257,23 @@ HTML
 Результат:
 ```html
 <tr>
-  <td> <label for="background-attachment">Положение</label> </td>
-  <td> <select name="background-attachment" id="background-attachment">
-    <optgroup label="Стандарт">
-      <option value="no-repeat">По умолчанию</option>
-      <option value="repeat">Замостить</option>
-      <option value="repeat-x">Горизонтально</option>
-      <option value="repeat-y">Вертикально</option>
-    </optgroup>
-    <optgroup label="С заполнением">
-      <option value="space">С пробеллами между фото</option>
-      <option value="Растянуть фото с заполнением">round</option>
-    </optgroup>
-  </select> </td>
+  <td>
+    <label for="background-attachment">Положение</label>
+  </td>
+  <td>
+    <select name="background-attachment" id="background-attachment">
+      <optgroup label="Стандарт">
+        <option value="no-repeat">По умолчанию</option>
+        <option value="repeat">Замостить</option>
+        <option value="repeat-x">Горизонтально</option>
+        <option value="repeat-y">Вертикально</option>
+      </optgroup>
+      <optgroup label="С заполнением">
+        <option value="space">С пробеллами между фото</option>
+        <option value="Растянуть фото с заполнением">round</option>
+      </optgroup>
+    </select>
+  </td>
 </tr>
 ```
 
