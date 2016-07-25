@@ -236,51 +236,40 @@ HTML
 ```
 
 
-### select(label, id, value)
+### select(label, id, value, groups)
 
 Вызов:
 ```jade
-+select('Мой список', 'main_select',
++select('Положение', 'background-attachment',
         {
-          one: "Один", 
-          two: "Два"
-        })
+          "Стандарт": {
+            "По умолчанию": "no-repeat",
+            "Замостить": "repeat", 
+            "Горизонтально": "repeat-x", 
+            "Вертикально": "repeat-y"
+          },
+          "С заполнением": {
+            "С пробеллами между фото":"space", 
+            "round": "Растянуть фото с заполнением"
+          }
+        }, true)
 ```
 Результат:
 ```html
 <tr>
-  <td>
-    <label for="main_select">Мой список</label>
-  </td>
-  <td>
-    <select name="main_select" id="main_select">
-      <option value="one">Один</option>
-      <option value="two">Два</option>
-    </select>
-  </td>
-</tr>
-```
-
-Вызов:
-```jade
-+select('Мой список', 'main_select',
-        {
-          "one two": "Один - Два", 
-          "three four": "Три - четыре"
-        })
-```
-Результат:
-```html
-<tr>
-  <td>
-    <label for="main_select">Мой список</label>
-  </td>
-  <td>
-    <select name="main_select" id="main_select">
-      <option value="one two">Один - Два</option>
-      <option value="three four">Три - четыре</option>
-    </select>
-  </td>
+  <td> <label for="background-attachment">Положение</label> </td>
+  <td> <select name="background-attachment" id="background-attachment">
+    <optgroup label="Стандарт">
+      <option value="no-repeat">По умолчанию</option>
+      <option value="repeat">Замостить</option>
+      <option value="repeat-x">Горизонтально</option>
+      <option value="repeat-y">Вертикально</option>
+    </optgroup>
+    <optgroup label="С заполнением">
+      <option value="space">С пробеллами между фото</option>
+      <option value="Растянуть фото с заполнением">round</option>
+    </optgroup>
+  </select> </td>
 </tr>
 ```
 
