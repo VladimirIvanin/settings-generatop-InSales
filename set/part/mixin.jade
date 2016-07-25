@@ -93,18 +93,22 @@ mixin image(labels, id, name, width, height)
       data-max-height= height
       )
 
-mixin select(labels, id, value)
+mixin select(label, id, value, groups)
   tr
     td
-      label(
-      for= id
-      )= labels
+      label(for= id,)= label
     td
-      select(
-      name= id
-      id= id
-      )
-        - each val, key in value
-            option(
-            value= key
-            )= val
+      select(name= id,id= id)
+
+        if !groups
+
+          each val, key in value
+            option(  value= val  )= key
+
+        else
+
+          each options, label in value
+            optgroup(label= label)
+
+              each val, key in options
+                option(  value= val  )= key
